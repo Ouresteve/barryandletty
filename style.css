@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Playfair Display', serif;
+  background: radial-gradient(circle at top, #2f4f3f, #0f1e16);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+              url("assets/images/IMG_8797.JPG.jpg") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  color: #d4af37;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.scroll-hint {
+  margin-top: 30px;
+  opacity: 0.7;
+}
+
+.story, .message {
+  max-width: 700px;
+  margin: auto;
+}
+
+h2 {
+  color: #d4af37;
+  margin-bottom: 20px;
+}
+
+.video-section video {
+  width: 90%;
+  max-width: 800px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+footer {
+  padding: 40px;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
+
+/* 🌸 LOVE RAIN */
+.love-rain span {
+  position: fixed;
+  top: -10%;
+  font-size: 20px;
+  animation: fall linear infinite;
+  pointer-events: none;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(110vh);
+    opacity: 0;
+  }
+}
+
+
+#startOverlay {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, #1b3a2a, #0b1a12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+.start-content {
+  text-align: center;
+  animation: fadePulse 2s infinite;
+}
+
+.start-content h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 3rem;
+  color: #d4af37;
+}
+
+.start-content p {
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+@keyframes fadePulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.6; }
+}
